@@ -1,0 +1,59 @@
+dir /data 755 0 0
+dir /dev 755 0 0
+dir /lib 755 0 0
+dir /lib/modules 755 0 0
+dir /modules 755 0 0
+dir /proc 755 0 0
+dir /res 755 0 0
+dir /res/images 755 0 0
+dir /sbin 755 0 0
+dir /sys 755 0 0
+dir /system 755 0 0
+file /default.prop /Users/koush/src/tab/foo/original/default.prop 666 0 0
+file /fota.rc /Users/koush/src/tab/foo/original/fota.rc 777 0 0
+file /init /Users/koush/src/tab/foo/original/init 777 0 0
+file /init.goldfish.rc /Users/koush/src/tab/foo/original/init.goldfish.rc 666 0 0
+file /init.rc /Users/koush/src/tab/foo/original/init.rc 777 0 0
+file /init.smdkc110.rc /Users/koush/src/tab/foo/original/init.smdkc110.rc 777 0 0
+file /initramfs.txt /Users/koush/src/tab/foo/original/initramfs.txt 666 0 0
+file /lib/modules/bthid.ko /Users/koush/src/tab/foo/original/lib/modules/bthid.ko 666 0 0
+file /lib/modules/dhd.ko /Users/koush/src/tab/foo/original/lib/modules/dhd.ko 666 0 0
+file /lib/modules/fsr.ko /Users/koush/src/tab/foo/original/lib/modules/fsr.ko 666 0 0
+file /lib/modules/fsr_stl.ko /Users/koush/src/tab/foo/original/lib/modules/fsr_stl.ko 666 0 0
+file /lib/modules/j4fs.ko /Users/koush/src/tab/foo/original/lib/modules/j4fs.ko 666 0 0
+file /lib/modules/modemctl.ko /Users/koush/src/tab/foo/original/lib/modules/modemctl.ko 666 0 0
+file /lib/modules/onedram.ko /Users/koush/src/tab/foo/original/lib/modules/onedram.ko 666 0 0
+file /lib/modules/param.ko /Users/koush/src/tab/foo/original/lib/modules/param.ko 666 0 0
+file /lib/modules/rfs_fat.ko /Users/koush/src/tab/foo/original/lib/modules/rfs_fat.ko 666 0 0
+file /lib/modules/rfs_glue.ko /Users/koush/src/tab/foo/original/lib/modules/rfs_glue.ko 666 0 0
+file /lib/modules/storage.ko /Users/koush/src/tab/foo/original/lib/modules/storage.ko 666 0 0
+file /lib/modules/svnet.ko /Users/koush/src/tab/foo/original/lib/modules/svnet.ko 666 0 0
+file /lib/modules/vibrator.ko /Users/koush/src/tab/foo/original/lib/modules/vibrator.ko 666 0 0
+file /lpm.rc /Users/koush/src/tab/foo/original/lpm.rc 777 0 0
+file /modules/pvrsrvkm.ko /Users/koush/src/tab/foo/original/modules/pvrsrvkm.ko 666 0 0
+file /modules/s3c_bc.ko /Users/koush/src/tab/foo/original/modules/s3c_bc.ko 666 0 0
+file /modules/s3c_lcd.ko /Users/koush/src/tab/foo/original/modules/s3c_lcd.ko 666 0 0
+file /recovery.rc /Users/koush/src/tab/foo/original/recovery.rc 777 0 0
+file /res/images/icon_error.png /Users/koush/src/tab/foo/original/res/images/icon_error.png 777 0 0
+file /res/images/icon_firmware_error.png /Users/koush/src/tab/foo/original/res/images/icon_firmware_error.png 777 0 0
+file /res/images/icon_firmware_install.png /Users/koush/src/tab/foo/original/res/images/icon_firmware_install.png 777 0 0
+file /res/images/icon_installing.png /Users/koush/src/tab/foo/original/res/images/icon_installing.png 777 0 0
+file /res/images/indeterminate1.png /Users/koush/src/tab/foo/original/res/images/indeterminate1.png 666 0 0
+file /res/images/indeterminate2.png /Users/koush/src/tab/foo/original/res/images/indeterminate2.png 666 0 0
+file /res/images/indeterminate3.png /Users/koush/src/tab/foo/original/res/images/indeterminate3.png 666 0 0
+file /res/images/indeterminate4.png /Users/koush/src/tab/foo/original/res/images/indeterminate4.png 666 0 0
+file /res/images/indeterminate5.png /Users/koush/src/tab/foo/original/res/images/indeterminate5.png 666 0 0
+file /res/images/indeterminate6.png /Users/koush/src/tab/foo/original/res/images/indeterminate6.png 666 0 0
+file /res/images/progress_bar_empty.png /Users/koush/src/tab/foo/original/res/images/progress_bar_empty.png 777 0 0
+file /res/images/progress_bar_empty_left_round.png /Users/koush/src/tab/foo/original/res/images/progress_bar_empty_left_round.png 777 0 0
+file /res/images/progress_bar_empty_right_round.png /Users/koush/src/tab/foo/original/res/images/progress_bar_empty_right_round.png 777 0 0
+file /res/images/progress_bar_fill.png /Users/koush/src/tab/foo/original/res/images/progress_bar_fill.png 777 0 0
+file /res/images/progress_bar_left_round.png /Users/koush/src/tab/foo/original/res/images/progress_bar_left_round.png 777 0 0
+file /res/images/progress_bar_right_round.png /Users/koush/src/tab/foo/original/res/images/progress_bar_right_round.png 777 0 0
+file /res/images/progress_empty.png /Users/koush/src/tab/foo/original/res/images/progress_empty.png 666 0 0
+file /res/images/progress_fill.png /Users/koush/src/tab/foo/original/res/images/progress_fill.png 666 0 0
+file /res/keys /Users/koush/src/tab/foo/original/res/keys 666 0 0
+file /sbin/adbd /Users/koush/src/tab/foo/original/sbin/adbd 777 0 0
+file /sbin/recovery /Users/koush/src/tab/foo/original/sbin/recovery 777 0 0
+file /sbin/redbend_ua /Users/koush/src/tab/foo/original/sbin/redbend_ua 777 0 0
+file /sbin/sh /Users/koush/src/tab/foo/original/sbin/sh 777 0 0
