@@ -28,8 +28,8 @@ loglevel 3
 #	setprop audioflinger.bootsnd 1
 
 # Backward compatibility
-    symlink /system/etc /etc
-    symlink /sys/kernel/debug /d
+    #symlink /system/etc /etc
+    #symlink /sys/kernel/debug /d
 
 # create mountpoints
     mkdir /mnt 0775 root system
@@ -59,7 +59,8 @@ loglevel 3
     insmod /lib/modules/dpram_recovery.ko
    
 # Backwards Compat - XXX: Going away in G*
-    symlink /mnt/sdcard /sdcard
+    #symlink /mnt/sdcard /sdcard
+    mkdir /sdcard
 
     mkdir /system
     mkdir /data 0771 system system
@@ -115,7 +116,7 @@ loglevel 3
 # mount mtd partitions
     # Mount /system rw first to give the filesystem a chance to save a checkpoint
     #mount yaffs2 mtd@system /system
-    mount rfs /dev/block/stl9 /system check=no
+    #mount rfs /dev/block/stl9 /system check=no
     #mount yaffs2 mtd@system /system ro remount
 
 # use movinand second partition as /data. d.moskvitin
@@ -187,8 +188,8 @@ on boot
 
 ## Daemon processes to be run by init.
 ##
-service console /system/bin/sh
-    console
+#service console /system/bin/sh
+#    console
 
 # P1_VZW
 #SDCARD is used for FOTA update in recovery mode.
@@ -196,8 +197,7 @@ service console /system/bin/sh
 #service vold /system/bin/vold
 #    socket vold stream 0660 root mount
 
-service recovery /system/bin/recovery
-    oneshot
+service recovery /sbin/recovery
 
 # adbd is controlled by the persist.service.adb.enable system property
 service adbd /sbin/adbd recovery
