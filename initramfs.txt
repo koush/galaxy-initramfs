@@ -48,7 +48,7 @@ file /res/images/progress_fill.png /Volumes/Data/tab/verizon/ramdisk/res/images/
 file /res/keys /Volumes/Data/tab/verizon/ramdisk/res/keys 666 0 0
 file /sbin/adbd /Volumes/Data/tab/verizon/ramdisk/sbin/adbd 777 0 0
 file /sbin/busybox /Volumes/Data/tab/verizon/ramdisk/sbin/busybox 777 0 0
-file /sbin/recovery /Volumes/Data/tab/verizon/ramdisk/sbin/recovery 666 0 0
+file /sbin/recovery /Volumes/Data/tab/verizon/ramdisk/sbin/recovery 777 0 0
 file /sbin/redbend_ua /Volumes/Data/tab/verizon/ramdisk/sbin/redbend_ua 777 0 0
 slink /sbin/[ busybox 777 0 0
 slink /sbin/[[ busybox 777 0 0
