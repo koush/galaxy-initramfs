@@ -1,10 +1,19 @@
+dir /data 755 0 0
+dir /dev 755 0 0
+dir /etc 755 0 0
 dir /lib 755 0 0
 dir /lib/modules 755 0 0
 dir /modules 755 0 0
+dir /proc 755 0 0
 dir /res 755 0 0
 dir /res/images 755 0 0
 dir /sbin 755 0 0
+dir /sys 755 0 0
+dir /system 755 0 0
+dir /system/bin 755 0 0
+dir /tmp 755 0 0
 file /default.prop /Volumes/Data/tab/verizon/ramdisk/default.prop 666 0 0
+file /etc/recovery.fstab /Volumes/Data/tab/verizon/ramdisk/etc/recovery.fstab 666 0 0
 file /fota.rc /Volumes/Data/tab/verizon/ramdisk/fota.rc 777 0 0
 file /init /Volumes/Data/tab/verizon/ramdisk/init 777 0 0
 file /init.goldfish.rc /Volumes/Data/tab/verizon/ramdisk/init.goldfish.rc 666 0 0
@@ -27,6 +36,7 @@ file /modules/pvrsrvkm.ko /Volumes/Data/tab/verizon/ramdisk/modules/pvrsrvkm.ko 
 file /modules/s3c_bc.ko /Volumes/Data/tab/verizon/ramdisk/modules/s3c_bc.ko 666 0 0
 file /modules/s3c_lcd.ko /Volumes/Data/tab/verizon/ramdisk/modules/s3c_lcd.ko 666 0 0
 file /recovery.rc /Volumes/Data/tab/verizon/ramdisk/recovery.rc 777 0 0
+file /res/images/icon_clockwork.png /Volumes/Data/tab/verizon/ramdisk/res/images/icon_clockwork.png 777 0 0
 file /res/images/icon_error.png /Volumes/Data/tab/verizon/ramdisk/res/images/icon_error.png 777 0 0
 file /res/images/icon_firmware_error.png /Volumes/Data/tab/verizon/ramdisk/res/images/icon_firmware_error.png 777 0 0
 file /res/images/icon_firmware_install.png /Volumes/Data/tab/verizon/ramdisk/res/images/icon_firmware_install.png 777 0 0
@@ -47,9 +57,17 @@ file /res/images/progress_empty.png /Volumes/Data/tab/verizon/ramdisk/res/images
 file /res/images/progress_fill.png /Volumes/Data/tab/verizon/ramdisk/res/images/progress_fill.png 666 0 0
 file /res/keys /Volumes/Data/tab/verizon/ramdisk/res/keys 666 0 0
 file /sbin/adbd /Volumes/Data/tab/verizon/ramdisk/sbin/adbd 777 0 0
-file /sbin/busybox /Volumes/Data/tab/verizon/ramdisk/sbin/busybox 777 0 0
+file /sbin/e2fsck /Volumes/Data/tab/verizon/ramdisk/sbin/e2fsck 777 0 0
+file /sbin/fix_permissions /Volumes/Data/tab/verizon/ramdisk/sbin/fix_permissions 777 0 0
+file /sbin/killrecovery.sh /Volumes/Data/tab/verizon/ramdisk/sbin/killrecovery.sh 777 0 0
+file /sbin/nandroid-md5.sh /Volumes/Data/tab/verizon/ramdisk/sbin/nandroid-md5.sh 777 0 0
+file /sbin/parted /Volumes/Data/tab/verizon/ramdisk/sbin/parted 777 0 0
+file /sbin/postrecoveryboot.sh /Volumes/Data/tab/verizon/ramdisk/sbin/postrecoveryboot.sh 777 0 0
 file /sbin/recovery /Volumes/Data/tab/verizon/ramdisk/sbin/recovery 777 0 0
 file /sbin/redbend_ua /Volumes/Data/tab/verizon/ramdisk/sbin/redbend_ua 777 0 0
+file /sbin/sdparted /Volumes/Data/tab/verizon/ramdisk/sbin/sdparted 777 0 0
+file /ueventd.goldfish.rc /Volumes/Data/tab/verizon/ramdisk/ueventd.goldfish.rc 666 0 0
+file /ueventd.rc /Volumes/Data/tab/verizon/ramdisk/ueventd.rc 666 0 0
 slink /sbin/[ busybox 777 0 0
 slink /sbin/[[ busybox 777 0 0
 slink /sbin/ash busybox 777 0 0
@@ -57,6 +75,7 @@ slink /sbin/awk busybox 777 0 0
 slink /sbin/basename busybox 777 0 0
 slink /sbin/bbconfig busybox 777 0 0
 slink /sbin/bunzip2 busybox 777 0 0
+slink /sbin/busybox recovery 777 0 0
 slink /sbin/bzcat busybox 777 0 0
 slink /sbin/bzip2 busybox 777 0 0
 slink /sbin/cal busybox 777 0 0
@@ -83,14 +102,18 @@ slink /sbin/dirname busybox 777 0 0
 slink /sbin/dmesg busybox 777 0 0
 slink /sbin/dos2unix busybox 777 0 0
 slink /sbin/du busybox 777 0 0
+slink /sbin/dump_image recovery 777 0 0
 slink /sbin/echo busybox 777 0 0
+slink /sbin/edify recovery 777 0 0
 slink /sbin/egrep busybox 777 0 0
 slink /sbin/env busybox 777 0 0
+slink /sbin/erase_image recovery 777 0 0
 slink /sbin/expr busybox 777 0 0
 slink /sbin/false busybox 777 0 0
 slink /sbin/fdisk busybox 777 0 0
 slink /sbin/fgrep busybox 777 0 0
 slink /sbin/find busybox 777 0 0
+slink /sbin/flash_image recovery 777 0 0
 slink /sbin/fold busybox 777 0 0
 slink /sbin/free busybox 777 0 0
 slink /sbin/freeramdisk busybox 777 0 0
@@ -125,11 +148,13 @@ slink /sbin/mkfs.ext2 busybox 777 0 0
 slink /sbin/mknod busybox 777 0 0
 slink /sbin/mkswap busybox 777 0 0
 slink /sbin/mktemp busybox 777 0 0
+slink /sbin/mkyaffs2image recovery 777 0 0
 slink /sbin/modprobe busybox 777 0 0
 slink /sbin/more busybox 777 0 0
 slink /sbin/mount busybox 777 0 0
 slink /sbin/mountpoint busybox 777 0 0
 slink /sbin/mv busybox 777 0 0
+slink /sbin/nandroid recovery 777 0 0
 slink /sbin/nice busybox 777 0 0
 slink /sbin/nohup busybox 777 0 0
 slink /sbin/od busybox 777 0 0
@@ -144,6 +169,7 @@ slink /sbin/pwd busybox 777 0 0
 slink /sbin/rdev busybox 777 0 0
 slink /sbin/readlink busybox 777 0 0
 slink /sbin/realpath busybox 777 0 0
+slink /sbin/reboot recovery 777 0 0
 slink /sbin/renice busybox 777 0 0
 slink /sbin/reset busybox 777 0 0
 slink /sbin/rm busybox 777 0 0
@@ -179,11 +205,13 @@ slink /sbin/tr busybox 777 0 0
 slink /sbin/true busybox 777 0 0
 slink /sbin/tty busybox 777 0 0
 slink /sbin/tune2fs busybox 777 0 0
+slink /sbin/ueventd ../init 777 0 0
 slink /sbin/umount busybox 777 0 0
 slink /sbin/uname busybox 777 0 0
 slink /sbin/uniq busybox 777 0 0
 slink /sbin/unix2dos busybox 777 0 0
 slink /sbin/unlzop busybox 777 0 0
+slink /sbin/unyaffs recovery 777 0 0
 slink /sbin/unzip busybox 777 0 0
 slink /sbin/uptime busybox 777 0 0
 slink /sbin/usleep busybox 777 0 0
