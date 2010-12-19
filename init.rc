@@ -116,7 +116,8 @@ loglevel 3
     #mount yaffs2 mtd@system /system
     #mount rfs /dev/block/stl9 /system check=no
     #mount rfs /dev/block/stl9 /system ro remount
-    mount rfs /dev/block/stl9 /system ro check=no
+    #mount rfs /dev/block/stl9 /system ro check=no
+    mount ext4 /dev/block/stl9 /system wait ro
     #mount yaffs2 mtd@system /system ro remount
 
     # We chown/chmod /data again so because mount is run as root + defaults
@@ -124,12 +125,13 @@ loglevel 3
 
 # use movinand second partition as /data. d.moskvitin
 	#exec apply_system_policy /dev/block/stl10
-    exec apply_disk_policy
+    #exec apply_disk_policy
 
 # SEC_INTERNAL_STORAGE
 # mount internal storage (moviNand or iNand)
     mkdir /data
-    mount rfs /dev/block/mmcblk0p2 /data nosuid nodev check=no
+    #mount rfs /dev/block/mmcblk0p2 /data nosuid nodev check=no
+    mount ext4 /dev/block/mmcblk0p2 /data wait noatime nosuid nodev
     chown system system /data
     chmod 0771 /data
 
@@ -139,7 +141,8 @@ loglevel 3
     chmod 0771 /preinstall	
 
     mkdir /dbdata
-    mount rfs /dev/block/stl10 /dbdata nosuid nodev check=no
+    #mount rfs /dev/block/stl10 /dbdata nosuid nodev check=no
+    mount ext4 /dev/block/stl10 /dbdata wait noatime nosuid nodev
     chown system system /dbdata
     chmod 0771 /dbdata
     chmod 0771 /dbdata
@@ -175,7 +178,8 @@ loglevel 3
     #mount yaffs2 mtd@cache /cache nosuid nodev
     #P1_VZW
     mkdir /cache
-    mount rfs /dev/block/mmcblk0p1 /cache nosuid nodev check=no
+    #mount rfs /dev/block/mmcblk0p1 /cache nosuid nodev check=no
+    mount ext4 /dev/block/mmcblk0p1 /cache wait noatime nosuid nodev
     chown system cache /cache
     chmod 0770 /cache
     
@@ -487,7 +491,6 @@ service playlogo /system/bin/playlogo
 # adbd is controlled by the persist.service.adb.enable system property
 service adbd /sbin/adbd
     group shell log
-    disabled
 
 # adbd on at boot in emulator
 on property:ro.kernel.qemu=1
