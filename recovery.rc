@@ -29,7 +29,7 @@ loglevel 3
 
 # Backward compatibility
     #symlink /system/etc /etc
-    mkdir /etc
+    symlink /res/etc /etc
     #symlink /sys/kernel/debug /d
 
 # create mountpoints

@@ -1,11 +1,11 @@
 dir /data 755 0 0
 dir /dev 755 0 0
-dir /etc 755 0 0
 dir /lib 755 0 0
 dir /lib/modules 755 0 0
 dir /modules 755 0 0
 dir /proc 755 0 0
 dir /res 755 0 0
+dir /res/etc 755 0 0
 dir /res/images 755 0 0
 dir /sbin 755 0 0
 dir /sys 755 0 0
@@ -13,7 +13,7 @@ dir /system 755 0 0
 dir /system/bin 755 0 0
 dir /tmp 755 0 0
 file /default.prop /Volumes/Data/tab/verizon/ramdisk/default.prop 666 0 0
-file /etc/recovery.fstab /Volumes/Data/tab/verizon/ramdisk/etc/recovery.fstab 666 0 0
+file /res/etc/recovery.fstab /Volumes/Data/tab/verizon/ramdisk/res/etc/recovery.fstab 666 0 0
 file /fota.rc /Volumes/Data/tab/verizon/ramdisk/fota.rc 777 0 0
 file /init /Volumes/Data/tab/verizon/ramdisk/init 777 0 0
 file /init.goldfish.rc /Volumes/Data/tab/verizon/ramdisk/init.goldfish.rc 666 0 0
@@ -224,3 +224,4 @@ slink /sbin/whoami busybox 777 0 0
 slink /sbin/xargs busybox 777 0 0
 slink /sbin/yes busybox 777 0 0
 slink /sbin/zcat busybox 777 0 0
+
