@@ -32,7 +32,8 @@ on init
 	mkdir /cache 0770 system cache
  
 	mount rfs /dev/block/stl3 /efs nosuid nodev check=no
-  	mount rfs /dev/block/stl9 /system check=no
+
+	symlink /res/etc /etc
 
 on boot
 #	write /sys/class/sec/switch/usb_sel PDA
@@ -44,12 +45,11 @@ on boot
 	class_start default
 
 #service console /bin/sh
-service console /system/bin/sh
-	console
+#service console /system/bin/sh
+#	console
 
 
 service recovery /sbin/recovery
-	oneshot
 
 service adbd /sbin/adbd recovery
 

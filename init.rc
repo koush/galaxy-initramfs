@@ -106,6 +106,7 @@ loglevel 3
  ##   mount yaffs2 mtd@system /system 
 
     mount rfs /dev/block/stl9 /system check=no
+    mount ext4 /dev/block/stl9 /system wait ro
 
 #    mount yaffs2 mtd@system /system ro remount
 
@@ -121,6 +122,7 @@ loglevel 3
 # create SEC_INTERNAL_STORAGE 2/2   
 ##    mount ext3 /dev/block/mmcblk0p1 /userdata nosuid nodev
     mount rfs /dev/block/mmcblk0p2 /data nosuid nodev check=no
+    mount ext4 /dev/block/mmcblk0p2 /data wait nosuid nodev
     chown system system /data
     chmod 0771 /data
    
@@ -136,6 +138,7 @@ loglevel 3
 # create dbdata partition
 mkdir /dbdata
 mount rfs /dev/block/stl10 /dbdata nosuid nodev check=no
+mount ext4 /dev/block/stl10 /dbdata wait nosuid nodev
 mkdir /dbdata/databases
 chown system system /dbdata
 chown system system /dbdata/databases
@@ -145,7 +148,8 @@ chmod 0777 /dbdata/databases
 
     # Same reason as /data above
     #mount yaffs2 mtd@cache /cache nosuid nodev
-    mount rfs /dev/block/stl11 /cache nosuid nodev check=no
+    #mount rfs /dev/block/stl11 /cache nosuid nodev check=no
+    mount ext4 /dev/block/stl11 /cache wait noatime nosuid nodev
     chown system cache /cache
     chmod 0770 /cache
 
@@ -505,7 +509,6 @@ service playlogos1 /system/bin/playlogos1
 
 # adbd is controlled by the persist.service.adb.enable system property
 service adbd /sbin/adbd
-    disabled
 
 # adbd on at boot in emulator
 on property:ro.kernel.qemu=1
