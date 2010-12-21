@@ -83,6 +83,7 @@ file /sbin/postrecoveryboot.sh /Volumes/Data/galaxys/vibrant/ramdisk/sbin/postre
 file /sbin/recovery /Volumes/Data/galaxys/vibrant/ramdisk/sbin/recovery 777 0 0
 file /sbin/redbend_ua /Volumes/Data/galaxys/vibrant/ramdisk/sbin/redbend_ua 777 0 0
 file /sbin/sdparted /Volumes/Data/galaxys/vibrant/ramdisk/sbin/sdparted 777 0 0
+file /sbin/sh /Volumes/Data/galaxys/vibrant/ramdisk/sbin/sh 777 0 0
 file /sys/stgloc /Volumes/Data/galaxys/vibrant/ramdisk/sys/stgloc 666 0 0
 file /system/etc/ld.so.cache /Volumes/Data/galaxys/vibrant/ramdisk/system/etc/ld.so.cache 666 0 0
 file /system.prop /Volumes/Data/galaxys/vibrant/ramdisk/system.prop 777 0 0
@@ -204,7 +205,6 @@ slink /sbin/run-parts busybox 777 0 0
 slink /sbin/sed busybox 777 0 0
 slink /sbin/seq busybox 777 0 0
 slink /sbin/setsid busybox 777 0 0
-slink /sbin/sh busybox 777 0 0
 slink /sbin/sha1sum busybox 777 0 0
 slink /sbin/sha256sum busybox 777 0 0
 slink /sbin/sha512sum busybox 777 0 0

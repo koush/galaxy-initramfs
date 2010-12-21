@@ -148,7 +148,7 @@ chmod 0777 /dbdata/databases
 
     # Same reason as /data above
     #mount yaffs2 mtd@cache /cache nosuid nodev
-    #mount rfs /dev/block/stl11 /cache nosuid nodev check=no
+    mount rfs /dev/block/stl11 /cache nosuid nodev check=no
     mount ext4 /dev/block/stl11 /cache wait noatime nosuid nodev
     chown system cache /cache
     chmod 0770 /cache
