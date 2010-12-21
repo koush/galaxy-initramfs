@@ -92,7 +92,6 @@ file /tmp/s3c-keypad.kcm.bin /Volumes/Data/galaxys/vibrant/ramdisk/tmp/s3c-keypa
 file /tmp/s3c-keypad.kl /Volumes/Data/galaxys/vibrant/ramdisk/tmp/s3c-keypad.kl 777 0 0
 file /ueventd.goldfish.rc /Volumes/Data/galaxys/vibrant/ramdisk/ueventd.goldfish.rc 666 0 0
 file /ueventd.rc /Volumes/Data/galaxys/vibrant/ramdisk/ueventd.rc 666 0 0
-slink /etc system/etc 777 0 0
 slink /init sbin/init 777 0 0
 slink /sbin/[ busybox 777 0 0
 slink /sbin/[[ busybox 777 0 0
