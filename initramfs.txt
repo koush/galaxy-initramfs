@@ -1,0 +1,58 @@
+dir /lib 755 0 0
+dir /lib/modules 755 0 0
+dir /modules 755 0 0
+dir /res 755 0 0
+dir /res/images 755 0 0
+dir /sbin 755 0 0
+file /default.prop /Volumes/Data/stuff/dump2/default.prop 666 0 0
+file /fota.rc /Volumes/Data/stuff/dump2/fota.rc 777 0 0
+file /init /Volumes/Data/stuff/dump2/init 777 0 0
+file /init.goldfish.rc /Volumes/Data/stuff/dump2/init.goldfish.rc 666 0 0
+file /init.rc /Volumes/Data/stuff/dump2/init.rc 777 0 0
+file /init.smdkc110.rc /Volumes/Data/stuff/dump2/init.smdkc110.rc 777 0 0
+file /initramfs.txt /Volumes/Data/stuff/dump2/initramfs.txt 666 0 0
+file /lib/modules/Si4709_driver.ko /Volumes/Data/stuff/dump2/lib/modules/Si4709_driver.ko 666 0 0
+file /lib/modules/bthid.ko /Volumes/Data/stuff/dump2/lib/modules/bthid.ko 666 0 0
+file /lib/modules/cmc7xx_sdio.ko /Volumes/Data/stuff/dump2/lib/modules/cmc7xx_sdio.ko 666 0 0
+file /lib/modules/dhd.ko /Volumes/Data/stuff/dump2/lib/modules/dhd.ko 666 0 0
+file /lib/modules/dpram.ko /Volumes/Data/stuff/dump2/lib/modules/dpram.ko 666 0 0
+file /lib/modules/dpram_recovery.ko /Volumes/Data/stuff/dump2/lib/modules/dpram_recovery.ko 666 0 0
+file /lib/modules/fsr.ko /Volumes/Data/stuff/dump2/lib/modules/fsr.ko 666 0 0
+file /lib/modules/fsr_stl.ko /Volumes/Data/stuff/dump2/lib/modules/fsr_stl.ko 666 0 0
+file /lib/modules/j4fs.ko /Volumes/Data/stuff/dump2/lib/modules/j4fs.ko 666 0 0
+file /lib/modules/modemctl.ko /Volumes/Data/stuff/dump2/lib/modules/modemctl.ko 666 0 0
+file /lib/modules/onedram.ko /Volumes/Data/stuff/dump2/lib/modules/onedram.ko 666 0 0
+file /lib/modules/param.ko /Volumes/Data/stuff/dump2/lib/modules/param.ko 666 0 0
+file /lib/modules/rfs_fat.ko /Volumes/Data/stuff/dump2/lib/modules/rfs_fat.ko 666 0 0
+file /lib/modules/rfs_glue.ko /Volumes/Data/stuff/dump2/lib/modules/rfs_glue.ko 666 0 0
+file /lib/modules/scsi_wait_scan.ko /Volumes/Data/stuff/dump2/lib/modules/scsi_wait_scan.ko 666 0 0
+file /lib/modules/storage.ko /Volumes/Data/stuff/dump2/lib/modules/storage.ko 666 0 0
+file /lib/modules/svnet.ko /Volumes/Data/stuff/dump2/lib/modules/svnet.ko 666 0 0
+file /lib/modules/vibrator.ko /Volumes/Data/stuff/dump2/lib/modules/vibrator.ko 666 0 0
+file /lib/modules/wimax_gpio.ko /Volumes/Data/stuff/dump2/lib/modules/wimax_gpio.ko 666 0 0
+file /lpm.rc /Volumes/Data/stuff/dump2/lpm.rc 777 0 0
+file /modules/pvrsrvkm.ko /Volumes/Data/stuff/dump2/modules/pvrsrvkm.ko 666 0 0
+file /modules/s3c_bc.ko /Volumes/Data/stuff/dump2/modules/s3c_bc.ko 666 0 0
+file /modules/s3c_lcd.ko /Volumes/Data/stuff/dump2/modules/s3c_lcd.ko 666 0 0
+file /recovery.rc /Volumes/Data/stuff/dump2/recovery.rc 777 0 0
+file /res/images/icon_error.png /Volumes/Data/stuff/dump2/res/images/icon_error.png 777 0 0
+file /res/images/icon_firmware_error.png /Volumes/Data/stuff/dump2/res/images/icon_firmware_error.png 777 0 0
+file /res/images/icon_firmware_install.png /Volumes/Data/stuff/dump2/res/images/icon_firmware_install.png 777 0 0
+file /res/images/icon_installing.png /Volumes/Data/stuff/dump2/res/images/icon_installing.png 777 0 0
+file /res/images/indeterminate1.png /Volumes/Data/stuff/dump2/res/images/indeterminate1.png 666 0 0
+file /res/images/indeterminate2.png /Volumes/Data/stuff/dump2/res/images/indeterminate2.png 666 0 0
+file /res/images/indeterminate3.png /Volumes/Data/stuff/dump2/res/images/indeterminate3.png 666 0 0
+file /res/images/indeterminate4.png /Volumes/Data/stuff/dump2/res/images/indeterminate4.png 666 0 0
+file /res/images/indeterminate5.png /Volumes/Data/stuff/dump2/res/images/indeterminate5.png 666 0 0
+file /res/images/indeterminate6.png /Volumes/Data/stuff/dump2/res/images/indeterminate6.png 666 0 0
+file /res/images/progress_bar_empty.png /Volumes/Data/stuff/dump2/res/images/progress_bar_empty.png 777 0 0
+file /res/images/progress_bar_empty_left_round.png /Volumes/Data/stuff/dump2/res/images/progress_bar_empty_left_round.png 777 0 0
+file /res/images/progress_bar_empty_right_round.png /Volumes/Data/stuff/dump2/res/images/progress_bar_empty_right_round.png 777 0 0
+file /res/images/progress_bar_fill.png /Volumes/Data/stuff/dump2/res/images/progress_bar_fill.png 777 0 0
+file /res/images/progress_bar_left_round.png /Volumes/Data/stuff/dump2/res/images/progress_bar_left_round.png 777 0 0
+file /res/images/progress_bar_right_round.png /Volumes/Data/stuff/dump2/res/images/progress_bar_right_round.png 777 0 0
+file /res/images/progress_empty.png /Volumes/Data/stuff/dump2/res/images/progress_empty.png 666 0 0
+file /res/images/progress_fill.png /Volumes/Data/stuff/dump2/res/images/progress_fill.png 666 0 0
+file /res/keys /Volumes/Data/stuff/dump2/res/keys 666 0 0
+file /sbin/adbd /Volumes/Data/stuff/dump2/sbin/adbd 777 0 0
+file /sbin/redbend_ua /Volumes/Data/stuff/dump2/sbin/redbend_ua 777 0 0
