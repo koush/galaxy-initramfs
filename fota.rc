@@ -65,11 +65,13 @@ on init
     #chown system system /data
     #chmod 0771 /data
 
-    mount rfs /dev/block/stl10 /data nosuid nodev check=no
+    #mount rfs /dev/block/stl10 /data nosuid nodev check=no
     chown system system /data
     chmod 0771 /data
    
-  	mount rfs /dev/block/stl9 /system check=no
+  	#mount rfs /dev/block/stl9 /system check=no
+
+    symlink /res/etc /etc
 
 on boot
 	#write /sys/class/sec/switch/uart_sel PDA
@@ -87,8 +89,8 @@ on boot
 
 
 # adbd is controlled by the persist.service.adb.enable system property
-service adbd /sbin/adbd
-	disabled
+#service adbd /sbin/adbd
+service adbd /sbin/adbd recovery
 
 on property:persist.service.adb.enable=1
 	start adbd
@@ -96,8 +98,4 @@ on property:persist.service.adb.enable=1
 on property:persist.service.adb.enable=0
 	stop adbd
 
-service recovery /system/bin/recovery
-	oneshot
-
-
-#service adbd /sbin/adbd recovery
+service recovery /sbin/recovery

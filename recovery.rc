@@ -24,6 +24,8 @@ on init
     insmod /lib/modules/rfs_glue.ko
     insmod /lib/modules/rfs_fat.ko
 
+    symlink /res/etc /etc
+
 # parameter block
     mkdir /mnt/.lfs 0755 root root
     insmod /lib/modules/j4fs.ko
@@ -90,4 +92,4 @@ on property:persist.service.adb.enable=1
 on property:persist.service.adb.enable=0
     stop adbd
 
-service recovery /system/bin/recovery
+service recovery /sbin/recovery
